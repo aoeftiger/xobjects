@@ -63,7 +63,8 @@ if _enabled:
             assert len(a.shape) == 1
             return cls(cq=a.queue, shape=a.shape, dtype=a.dtype,
                     data=a.base_data, offset=a.offset, strides=a.strides, order='C',
-                    _flags=a.flags)
+#                    _flags=a.flags)
+)
 
 class ContextPyopencl(XContext):
     @property
